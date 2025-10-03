@@ -6,6 +6,7 @@ import br.com.fiap3espa.Auto_Escola_3espa.instrutor.Instrutor;
 import br.com.fiap3espa.Auto_Escola_3espa.instrutor.InstrutorRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.GroupSequence;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +19,7 @@ public class InstrutorController {
 
     @PostMapping
     @Transactional
-    public void cadastroInstrutor(@RequestBody DadosCadastroInstrutor dados){
+    public void cadastroInstrutor(@RequestBody @Valid DadosCadastroInstrutor dados){
         //System.out.println(dados);
         repository.save(new Instrutor(dados));
     }
