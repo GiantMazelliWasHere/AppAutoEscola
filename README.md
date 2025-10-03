@@ -2,7 +2,7 @@
     "nome": "Josival do Santos",
     "email": "JosivalS@gmail.com",
     "cnh":"161651984865",
-    "especilidade": "CARROS",
+    "especialidade": "CARROS",
     "endereco":{
         "logradouro": "Rua das Dores",
         "numero": "1000",
